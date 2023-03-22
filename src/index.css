@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.CenteredText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  background-image: url(Images/val.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
