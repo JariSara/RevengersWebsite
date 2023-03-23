@@ -12,7 +12,7 @@ const BackgroundImagePage = () => {
 function App() {
   return (
     <div>
-    <BackgroundImagePage>gaga</BackgroundImagePage>  
+    <BackgroundImagePage>gaga</BackgroundImagePage> 
     </div>
   );
 }
