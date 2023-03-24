@@ -33,9 +33,9 @@ nav:imageProps {
 .testImage {
   background-image: url(./Revengers_Logo.png);
   background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   background-position: left;
-  margin-left: -300px;
+  margin-left: -350px;
   background-size: cover; /* Resize the background image to cover the entire container */
 }

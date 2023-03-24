@@ -6,11 +6,22 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar.tsx";
 
+const myStyle = {
+  backgroundImage: `url(${process.env.PUBLIC_URL + "/val.jpg"})`,
+  height: '100vh',
+  marginTop: '-70px',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+};
+
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+      <div style={myStyle} />
+    </div>
   )
 }
 
