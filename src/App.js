@@ -3,10 +3,19 @@ import './App.css';
 import FrontPage from "./Components/Front/Frontpage.tsx";
 import './index.css';
 import React, { Component } from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from "./Components/Navbar/Navbar.tsx";
 
 function App() {
   return (
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
+  )
+}
+
+/*
+
     <div>
     <header>
         <nav>
@@ -17,10 +26,6 @@ function App() {
       </header>
         <FrontPage></FrontPage>
       </div>
-  );
-}
-
-/*
           <img src="./Revengers_Logo.png"></img>
   render() {
     const myStyle={
