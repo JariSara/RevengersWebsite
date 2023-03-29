@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import FrontPage from "./Components/Front/Frontpage.tsx";
+import Players from "./Components/PlayerInfo/Players.tsx";
+import History from "./Components/GameHistory/History.tsx";
+import Tournaments from "./Components/FutureMatches/Tournaments.tsx";
 import './index.css';
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar.tsx";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Container from '@mui/system/Container';
 const myStyle = {
   backgroundImage: `url(${process.env.PUBLIC_URL + "/val.jpg"})`,
   height: '100vh',
@@ -15,18 +19,29 @@ const myStyle = {
 };
 
 function App() {
+  console.log("osd");
   return (
     <div>
-      <BrowserRouter>
-        <Navbar />
-      </BrowserRouter>
-      <div style={myStyle} />
+        <BrowserRouter>
+          <Navbar />
+          <div style={myStyle}>
+          <Container maxWidth="m">
+          <Routes>
+            <Route path="Frontpage" element={<FrontPage />} />
+            <Route path="Players" element={<Players />} />
+            <Route path="History" element={<History />} />
+            <Route path="Tournaments" element={<Tournaments />} />
+          </Routes>
+          </Container>
+          </div>
+        </BrowserRouter>
+
     </div>
   )
 }
 
 /*
-
+      <div style={myStyle} />
     <div>
     <header>
         <nav>

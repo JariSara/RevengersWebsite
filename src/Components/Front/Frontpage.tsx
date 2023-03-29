@@ -1,7 +1,6 @@
 import React from "react";
 function FrontPage(){
-    var debug = require("debug");
-debug("some logs");
+   console.log("o");
     return(
         <div>
             <p>tesssdt</p>

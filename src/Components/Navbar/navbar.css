@@ -45,7 +45,13 @@ body {
 
 .newFont{
   font-family: dbFont;
+  color:white;
   font-size: 25px;
+}
+.playerDescriptionFont{
+  font-family: dbFont;
+  color:white;
+  font-size: 15px;
 }
 .newFont:hover{
   color: #ff0000;
