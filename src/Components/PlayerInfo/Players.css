@@ -1,0 +1,33 @@
+.blurContent:hover {
+    filter:blur(3px);
+    transition: 0.4s ease-out;
+    border:0;
+  }
+  .flexing{
+    display:flex;
+    justify-content:center;
+    align-items:center
+  }
+
+  .newFontt{
+    font-family: dbFont;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+  }
+  .playerDescriptionFont{
+    font-family: dbFont;
+    color:white;
+    font-size: 15px;
+  }
+.divAdjuster{
+    margin-top:100px
+}
+
+.BoxedText{
+    font-family: dbFont;
+    color:red;
+    font-size: 25px;
+    text-align: center;
+    border: 1px white;
+}

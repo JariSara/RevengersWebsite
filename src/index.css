@@ -65,12 +65,6 @@ nav:imageProps {
   grid-row: 2;
   grid-column: 1;
 }
-
-.blurContent:hover {
-  filter:blur(3px);
-  transition: 0.4s ease-out;
-}
-
 .MuiCard-root {
   backdrop-filter: blur(1400px) !important;
   background-color: red;

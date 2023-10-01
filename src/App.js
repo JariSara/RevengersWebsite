@@ -11,11 +11,12 @@ import Navbar from "./Components/Navbar/Navbar.tsx";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Container from '@mui/system/Container';
 const myStyle = {
-  backgroundImage: `url(${process.env.PUBLIC_URL + "/val.jpg"})`,
-  height: '100vh',
+  backgroundImage: `url(${process.env.PUBLIC_URL + "/bg.jpg"})`,
+  height: '200vh',
   marginTop: '-70px',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  backgroundAttachment: "fixed"
 };
 
 function App() {
@@ -25,14 +26,13 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <div style={myStyle}>
-          <Container maxWidth="m">
           <Routes>
             <Route path="Frontpage" element={<FrontPage />} />
             <Route path="Players" element={<Players />} />
             <Route path="History" element={<History />} />
             <Route path="Tournaments" element={<Tournaments />} />
           </Routes>
-          </Container>
+
           </div>
         </BrowserRouter>
 

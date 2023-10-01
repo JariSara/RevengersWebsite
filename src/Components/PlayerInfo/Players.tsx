@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 
 import CardContent from '@mui/material/CardContent';
@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 
 import Typography from '@mui/material/Typography';
 import '../../index.css';
+import './Players.css';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import { Box, CardActions, Collapse, Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -32,93 +33,93 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
-
+const showShit = false;
 const styles = {
   transparentBar: {
     backdropFilter: 'blur(1400)'
   }
 };
-
-const CardInfo = function (playerName, playerInformation) {
+function changeBackground(e) {
+  e.target.style.background = 'red';
+}
+const CardInfo = function (playerName, playerInformation, imageName, typeOfPlayer, ageAndCountry) {
   const playerN = playerName;
   const playerI = playerInformation;
   const [expanded, setExpanded] = React.useState(false);
-
+  const [style, setStyle] = useState({ display: 'none' });
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
   return (
-    <div className='blurContent'>
-    <Card sx={{ maxWidth: 500, ':hover': {
-        boxShadow: 20, blur:2000,
-    } }} style={{ backgroundColor: "black", borderColor: "red" }}>
-      <div className='blurContent'>
-      <Box sx={{ border: 1, borderColor: '#FFFFFF', borderWidth:"5px"}}>
-      <div className='blurContent'>
-        <CardMedia
-          component="img"
-          alt="green iguana"
-          height="140"
-          image="../Revengers_Logo.png" 
-        />
+
+    <div className="divAdjuster">
+      <Card sx={{
+        maxWidth: 500, ':hover': {
+          boxShadow: 20
+        }
+      }} style={{ backgroundColor: "transparent" }}>
+        <div onMouseEnter={e => {
+          setStyle({ display: 'block' });
+        }}
+          onMouseLeave={e => {
+            setStyle({ display: 'none' })
+          }}>
+
+          <div >
+            <Box sx={{ border: 85, borderColor: 'transparent' }}>
+              <div>
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  image={imageName}
+                />
+
+                <p className="newFontt">{playerN}</p>
+                <p className="BoxedText">{typeOfPlayer}</p>
+                <p className="newFontt">{ageAndCountry}</p>
+                <p className='newFontt' style={style}>{playerI}</p>
+              </div>
+            </Box>
+          </div>
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+
+            </Typography>
+          </CardContent>
+
         </div>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            
-            <span className="newFont">{playerN}</span>
-          </Typography>
-        </CardContent> 
-        <CardActions>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <button></button>
-        </ExpandMore>
-        </CardActions>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          <span className="playerDescriptionFont">{playerI}</span>
-          </Typography>
-        </CardContent>
-      </Collapse>
-      </Box>
-      </div>
-    </Card>
+      </Card>
     </div>
+
   )
 
 }
 
 function Players() {
 
-  const rea = CardInfo("RVG Rea", "Rea is one of our most unique players. With a wide range of agents in his arsenal, this child manages to rescue the team every match. His aggressive style makes the opponents slam their keyboard in rage. Although his teammates are not happy about the aggressive peeks, the results speak for themselves. ");
-  const DTZomby = CardInfo("RVG DTZomby", "Carlos har kjempestor kuk");
-  const flame = CardInfo("RVG Flame", "Flame har banket somalere");
-  const brotherhanky = CardInfo("RVG Brotherhanky", "Brother linups");
-  const toctic = CardInfo("RVG TocTic", "Toctic er mastermind");
+  const rea = CardInfo("Rea", "Rea is one of our most unique players. With a wide range of agents in his arsenal, this child manages to rescue the team every match. His aggressive style makes the opponents slam their keyboard in rage. Although his teammates are not happy about the aggressive peeks, the results speak for themselves. ", "../sky.gif", "player", "24, Norway");
+  const DTZomby = CardInfo("DTZomby", "Carlos har kjempestor kuk", "../omen.gif", "player", "27, Norway");
+  const flame = CardInfo("Flame", "Flame har banket somalere", "../kayo.gif", "player", "24, Latvia");
+  const brotherhanky = CardInfo("hanky", "Brother linups", "../viper.gif", "player", "27, Norway");
+  const toctic = CardInfo("TocTic", "Toctic er mastermind", "../breach.gif", "player", "27, Norway");
   return (
-    <Grid container>
-      <Grid xs={4} md={6}>
-        <Grid item>    {DTZomby}</Grid>
-      </Grid>
-      <Grid xs={4} md={4}>
-        <Grid item>  {rea}</Grid>
-      </Grid>
-      <Grid xs={4} md={4}>
-        <Grid item>  {flame}</Grid>
-      </Grid>
-      <Grid xs={4} md={4}>
-        <Grid item>  {brotherhanky}</Grid>
-      </Grid>
-      <Grid xs={4} md={4}>
-        <Grid item>  {toctic}</Grid>
-      </Grid>
+    <div>
+      <p>Hello</p>
+      <div className='flexing'>
 
-    </Grid>
+        {DTZomby}
+
+        {rea}
+
+        {flame}
+
+        {brotherhanky}
+
+        {toctic}
+
+      </div>
+    </div>
   )
 }
 export default Players;
