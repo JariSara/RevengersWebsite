@@ -12,7 +12,7 @@
   .newFontt{
     font-family: dbFont;
     color:white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   .playerDescriptionFont{
@@ -23,7 +23,12 @@
 .divAdjuster{
     margin-top:100px
 }
-
+.modalAdjuster{
+  margin-top:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
 .BoxedText{
     font-family: dbFont;
     color:red;
