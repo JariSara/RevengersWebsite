@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import FrontPage from "./Components/Front/Frontpage.tsx";
 import Players from "./Components/PlayerInfo/Players.tsx";
-import History from "./Components/GameHistory/History.tsx";
+import History from "./Components/GameHistory/History.jsx";
 import Tournaments from "./Components/FutureMatches/Tournaments.tsx";
+import Contact from "./Components/ContactForm/EmailContactForm.jsx";
 import './index.css';
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
@@ -31,6 +32,7 @@ function App() {
             <Route path="Players" element={<Players />} />
             <Route path="History" element={<History />} />
             <Route path="Tournaments" element={<Tournaments />} />
+            <Route path="Contact" element={<Contact />} />
           </Routes>
 
           </div>

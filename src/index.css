@@ -69,3 +69,20 @@ nav:imageProps {
   backdrop-filter: blur(1400px) !important;
   background-color: red;
 }
+
+.flexing{
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+
+.divAdjuster{
+  margin-top:100px
+}
+
+.newFontt{
+  font-family: dbFont;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+}

@@ -32,12 +32,178 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 @font-face {
   font-family: 'dbFont';
   font-weight: 900;
   src: local('dbFont'), url(./Fonts/dbFont.ttf) format('truetype');
+}
+
+@media screen and (max-width: 2066px) {
+  p {
+    font-size: 30px;
+    font-family: dbFont;
+    color: rgb(243, 15, 15);
+  }
+
+  body span {
+
+    font-size: 30px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+
+  }
+
+}
+
+
+@media screen and (max-width: 1366px) {
+  p {
+    font-size: 30px;
+    font-family: dbFont;
+    color: rgb(243, 15, 15);
+  }
+
+  body span {
+
+    font-size: 25px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+
+  }
+
+  .testImage2 {
+    background-image: url(./Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    background-position: left;
+    margin-left: -350px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+
+}
+
+@media screen and (max-width: 2024px) {
+  p {
+    font-size: 20px;
+    font-family: dbFont;
+    color: white;
+  }
+
+  body span {
+    font-size: 20px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+  }
+  .testImage2 {
+    background-image: url(./Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 13rem;
+    height: 13rem;
+    background-position: left;
+    margin-left: -350px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+
+@media screen and (max-width: 1424px) {
+  p {
+    font-size: 20px;
+    font-family: dbFont;
+    color: white;
+  }
+
+  body span {
+    font-size: 20px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+  }
+  .testImage2 {
+    background-image: url(./Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 8rem;
+    background-position: left;
+    margin-left: -150px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 20px;
+    font-family: dbFont;
+    color: white;
+  }
+
+  body span {
+    font-size: 20px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+  }
+  .testImage2 {
+    background-image: url(./Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 8rem;
+    background-position: left;
+    margin-left: -80px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 15px;
+    font-family: dbFont;
+    color: white;
+  }
+  body span {
+    font-size: 17px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+  }
+  .testImage2 {
+    background-image: url(./Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 5rem;
+    background-position: left;
+    margin-left: -50px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 10px;
+    font-family: dbFont;
+    color: white;
+  }
+  body span {
+    font-size: 13px;
+    font-family: dbFont;
+    color: rgb(97, 50, 207);
+  }
+  .testImage2 {
+    background-image: url(./Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 5rem;
+    background-position: left;
+    margin-left: -30px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
 }

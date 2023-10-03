@@ -77,7 +77,7 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
             }}>
 
             <div >
-              <Box sx={{ border: 50, borderColor: 'transparent', width: "200px", height: "280px" }}>
+              <Box className="boxAdjuster">
                 <div>
                   <CardMedia
                     component="img"
@@ -109,7 +109,7 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
               maxWidth: 600
             }} style={{ backgroundColor: "transparent" }}>
               <div>
-                <Box sx={{ border: 50, borderColor: 'transparent', width: "400px", height: "840px" }}>
+                <Box sx={{ border: 50, borderColor: 'transparent', width: "25rem", height: "50rem" }}>
                   <div>
                     <CardMedia
                       component="img"
@@ -147,23 +147,15 @@ function Players() {
   const Kraize = CardInfo("Stortiltarn", "fucking faggot", "../sova.gif", "stand in", "28, Norway");
   return (
     <div>
-      <div className='flexing'>
+      <div className='flexing2'>
 
         {DTZomby}
-
         {rea}
-
         {flame}
-
         {brotherhanky}
-
         {toctic}
-      </div>
-      <div className='flexing'>
         {Mange}
-
         {Dinkelbergir}
-
         {Kraize}
       </div>
     </div>

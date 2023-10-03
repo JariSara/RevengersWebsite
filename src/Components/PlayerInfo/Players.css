@@ -1,38 +1,87 @@
 .blurContent:hover {
-    filter:blur(3px);
-    transition: 0.4s ease-out;
-    border:0;
-  }
-  .flexing{
-    display:flex;
-    justify-content:center;
-    align-items:center
+  filter: blur(3px);
+  transition: 0.4s ease-out;
+  border: 0;
+}
+
+.flexing2 {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.newFontt {
+  font-family: dbFont;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.playerDescriptionFont {
+  font-family: dbFont;
+  color: white;
+  font-size: 15px;
+}
+
+.divAdjuster {
+  margin-top: 100px
+}
+
+.modalAdjuster {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.BoxedText {
+  font-family: dbFont;
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  border: 1px white;
+}
+
+.boxAdjuster {
+  border: 50;
+  border-color: 'transparent';
+
+}
+
+@media screen and (max-width: 2066px) {
+  .boxAdjuster {
+    width: 20rem;
+    height: 30rem;
   }
 
-  .newFontt{
-    font-family: dbFont;
-    color:white;
-    font-size: 20px;
-    text-align: center;
-  }
-  .playerDescriptionFont{
-    font-family: dbFont;
-    color:white;
-    font-size: 15px;
-  }
-.divAdjuster{
-    margin-top:100px
 }
-.modalAdjuster{
-  margin-top:100px;
-  display:flex;
-  justify-content:center;
-  align-items:center
+
+@media screen and (max-width: 1366px) {
+  .boxAdjuster {
+    width: 18rem;
+    height: 25rem;
+  }
+
 }
-.BoxedText{
-    font-family: dbFont;
-    color:red;
-    font-size: 25px;
-    text-align: center;
-    border: 1px white;
+
+@media screen and (max-width: 1024px) {
+  .boxAdjuster {
+    width: 14rem;
+    height: 24rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .boxAdjuster {
+    width: 10rem;
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .boxAdjuster {
+    width: 5rem;
+    height: 12rem;
+  }
 }
