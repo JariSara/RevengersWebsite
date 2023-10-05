@@ -1,10 +1,10 @@
-import React from "react";
-function FrontPage(){
-   console.log("o");
-    return(
-        <div>
-            <p>tesssdt</p>
-        </div>
+import React, { useEffect, useState } from "react";
+import './FrontPage.css';
+import FrontPageTextAnimation from "./FrontPageTextAnimation.tsx";
+
+function FrontPage() {
+    return (
+        <div><FrontPageTextAnimation></FrontPageTextAnimation></div>
     )
 }
 export default FrontPage;

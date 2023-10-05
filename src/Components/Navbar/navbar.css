@@ -102,7 +102,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: #c9c3b5;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
@@ -133,7 +133,7 @@ body {
     position: absolute;
     right: 0;
     top: 45px;
-    background-color: #e6a80c;
+    background-color: #ffba0d;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;

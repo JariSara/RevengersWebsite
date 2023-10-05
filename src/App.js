@@ -13,10 +13,9 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Container from '@mui/system/Container';
 const myStyle = {
   backgroundImage: `url(${process.env.PUBLIC_URL + "/bg.jpg"})`,
-  height: '200vh',
-  marginTop: '-70px',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
+  height: 'auto',
+  backgroundSize: '100% 100%',
+  backgroundRepeat: 'repeat',
   backgroundAttachment: "fixed"
 };
 

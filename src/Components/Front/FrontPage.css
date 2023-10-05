@@ -1,0 +1,175 @@
+.test {
+    margin: 300px;
+    height: 1000px;
+    width: 100px;
+    overflow-wrap: break-word;
+}
+
+.test div {
+    color: white;
+    margin: 50px;
+    padding: 10px;
+
+    font-family: dbFont;
+    font-size: 25px;
+}
+
+.fontContact {
+    font-family: dbFont;
+    color: white;
+    font-size: 20px;
+}
+
+.divAdjuster {
+    margin-top: 100px;
+
+}
+
+.textAdjuster {
+    font-family: dbFont;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 850px;
+}
+
+h1 {
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Add a black outline */
+    font-family: dbFont;
+}
+
+.colorBox {
+    color: red;
+}
+
+
+.imageAdjusterLeft {
+    object-position: right;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 1px;
+    text-align: center;
+}
+
+.left {
+    justify-content: flex-start;
+    /* Align content to the left within the left column */
+    display: flex;
+    flex-direction: column;
+    /* Vertically stack the images */
+
+}
+
+.right {
+    justify-content: flex-end;
+    /* Align content to the right within the right column */
+    display: flex;
+    flex-direction: column;
+    /* Vertically stack the images */
+
+}
+
+.left img,
+.right img {
+    max-width: 200%;
+    height: auto;
+    margin-bottom: 200px;
+    /* Add margin-bottom to create space between images */
+    width: 250px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.middle {
+    flex: 3;
+    /* Adjust the flex value to control the width of the middle section */
+    text-align: center;
+    margin-top: -400px;
+}
+
+@media (max-width: 2008px) {
+
+    .left img,
+    .right img {
+        max-width: 200%;
+        height: auto;
+        margin-bottom: 200px;
+        /* Add margin-bottom to create space between images */
+        width: 250px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain the aspect ratio */
+    }
+
+    .middle {
+        flex: 3;
+        /* Adjust the flex value to control the width of the middle section */
+        text-align: center;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1408px) {
+    h1{
+        font-size: 2rem;
+    }
+    .left img,
+    .right img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 8rem;
+        /* Add margin-bottom to create space between images */
+        width: 25rem;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain the aspect ratio */
+    }
+
+    .middle {
+        flex: 3;
+        /* Adjust the flex value to control the width of the middle section */
+        text-align: center;
+        margin-top: -7rem;
+    }
+}
+
+.fading-text .fade-in-word {
+    color: white;
+    opacity: 1;
+    filter: brightness(0.3); /* Set initial low brightness */
+    display: inline-block;
+    margin-right: 4px; /* Add spacing between words */
+    transition: filter 1s ease-in-out;
+    font-size: 2rem;
+  }
+  
+  .fading-text .fade-in-word.visible {
+    filter: brightness(1); /* Increase brightness to full */
+  }
+  .gradual-red-fade-in {
+    color: white; /* Start with red text */
+    animation: redFadeIn 4s linear forwards; /* Use a 2-second animation called redFadeIn */
+  }
+  
+  /* Define the keyframes for the fade-in effect */
+  @keyframes redFadeIn {
+    0% {
+      color: white; /* Start with transparent text */
+    }
+    100% {
+      color: white; /* Gradually transition to red at the end of the animation */
+      background-color: red;
+
+    }
+  }

@@ -51,7 +51,7 @@
     color: rgb(243, 15, 15);
   }
 
-  body span {
+  span {
 
     font-size: 30px;
     font-family: dbFont;
@@ -100,7 +100,7 @@
   body span {
     font-size: 20px;
     font-family: dbFont;
-    color: rgb(97, 50, 207);
+    color: #38E4BD;
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -124,7 +124,6 @@
   body span {
     font-size: 20px;
     font-family: dbFont;
-    color: rgb(97, 50, 207);
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -148,7 +147,6 @@
   body span {
     font-size: 20px;
     font-family: dbFont;
-    color: rgb(97, 50, 207);
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -171,7 +169,6 @@
   body span {
     font-size: 17px;
     font-family: dbFont;
-    color: rgb(97, 50, 207);
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -194,7 +191,6 @@
   body span {
     font-size: 13px;
     font-family: dbFont;
-    color: rgb(97, 50, 207);
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);

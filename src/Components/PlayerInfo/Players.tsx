@@ -82,7 +82,7 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
                   <CardMedia
                     component="img"
                     alt="green iguana"
-                    height="140"
+                    height="210"
                     image={imageName}
                   />
                   <p className="newFontt">{playerN}</p>
@@ -109,7 +109,7 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
               maxWidth: 600
             }} style={{ backgroundColor: "transparent" }}>
               <div>
-                <Box sx={{ border: 50, borderColor: 'transparent', width: "25rem", height: "50rem" }}>
+                <Box className="boxAdjuster2">
                   <div>
                     <CardMedia
                       component="img"
@@ -120,8 +120,8 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
                     />
                     <p className="newFontt">{playerN}</p>
                     <p className="BoxedText">{typeOfPlayer}</p>
-                    <p className="newFontt">{ageAndCountry}</p>
-                    <p className="newFontt">{playerInformation}</p>
+                    <p className="fontCardEnlarged">{ageAndCountry}</p>
+                    <p className="fontCardEnlarged">{playerInformation}</p>
                   </div>
                 </Box>
               </div>

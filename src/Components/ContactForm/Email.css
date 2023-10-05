@@ -82,7 +82,7 @@ input[type="submit"] {
   }
 
 .test{
-    margin: 30px;
+    margin-top: 100px;
     height: 100px;
     width: 350px;
     overflow-wrap: break-word;
@@ -91,7 +91,12 @@ input[type="submit"] {
     color: white;
     margin: 5px;
     padding: 10px;
-
     font-family: dbFont;
     font-size: 25px;
+}
+
+.flexingEmail{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -2,8 +2,14 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Email.css';
 import '../../index.css';
-import { Container } from '@mui/system';
 
+const myStyle = {
+  backgroundImage: `url(${process.env.PUBLIC_URL + "../bg.jpg"})`,
+  height: '100vh',
+  backgroundSize: '100% 100%',
+  backgroundRepeat: 'repeat',
+  backgroundAttachment: "fixed"
+};
 
 const EmailContactForm = () => {
   const form = useRef();
@@ -21,13 +27,13 @@ const EmailContactForm = () => {
 
   return (
 
-<div className="flexing">
-  <div className="divAdjuster">
+<div className="flexingEmail">
+<div style={myStyle}></div>
     <div className="test">
       <div> If you wish to come in contact with our management,
         please use this form to contact our staff. The same goes for business inquiries!</div></div>
 
-        <br /><br /><br />          <form ref={form} onSubmit={sendEmail}>
+         <form ref={form} onSubmit={sendEmail}>
           <p className="fontContact">Name</p>
           <input type="text" name="to_name" />
           <br />
@@ -38,7 +44,7 @@ const EmailContactForm = () => {
           <textarea name="message" />
           <input type="submit" value="Send" />
         </form>
-</div></div>
+</div>
 
   );
 };
