@@ -1,0 +1,39 @@
+.scoreboard-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff; /* Text color */
+  }
+  
+  .scoreboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  
+  .team {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  .divAdjuster {
+    margin-top: 40px
+  }
+  .organizerPhoto {
+
+}
+
+.organizerPhoto img{
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
