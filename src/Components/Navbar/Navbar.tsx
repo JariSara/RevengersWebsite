@@ -19,13 +19,13 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <div className="blurImage">
-          <div className="testImage2"></div>
+          <div className="navImage"></div>
           </div>
         </div>
         <div className="nav-elements">
           <ul>
             <li>
-              <NavLink to="/Frontpage">
+              <NavLink to="/">
                 <span>Home</span>
               </NavLink>
             </li>

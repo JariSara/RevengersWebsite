@@ -86,6 +86,17 @@ body {
   background-color: #574c4c;
 }
 
+.navImage {
+  background-image: url(../../Revengers_Logo.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  background-position: left;
+  margin-left: -350px;
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
@@ -93,6 +104,16 @@ body {
 }
 
 @media (max-width: 600px) {
+  .navImage {
+    background-image: url(../../Revengers_Logo.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position: left;
+    margin-left: -350px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+  }
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -101,10 +122,6 @@ body {
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 60px;
-    background-color: #c9c3b5;
-    width: 0px;
-    height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
   }
@@ -114,7 +131,7 @@ body {
 
   .nav-elements ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .nav-elements ul li {
@@ -132,25 +149,27 @@ body {
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 45px;
-    background-color: #ffba0d;
-    width: 0px;
-    height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
-  }
 
+  }
+  .nav-elements span{
+    font-size: 0.8rem;
+  }
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 15px;
+  }
   .nav-elements.active {
-    width: 240px;
+    width: 270px;
   }
 
   .nav-elements ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .nav-elements ul li {
     margin-right: unset;
-    margin-top: 18px;
+    margin-top: 10px;
   }
 }

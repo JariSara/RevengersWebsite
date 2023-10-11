@@ -19,7 +19,7 @@ const EmailContactForm = () => {
 
     emailjs.sendForm('service_gic95qp', 'template_08by5sp', form.current, 'K3BMMGqJhl2Yfh2KQ')
       .then((result) => {
-        alert("success")
+        alert("Email sent")
       }, (error) => {
         alert("fail")
       });
@@ -28,24 +28,26 @@ const EmailContactForm = () => {
   return (
 
 <div className="flexingEmail">
-<div style={myStyle}></div>
-    <div className="test">
+<div style={myStyle}>
+    <div className="emailContainer">
       <div> If you wish to come in contact with our management,
-        please use this form to contact our staff. The same goes for business inquiries!</div></div>
-
+        please use this form to contact our staff. The same goes for business inquiries!</div>
+        <div className='formCont'>
          <form ref={form} onSubmit={sendEmail}>
           <p className="fontContact">Name</p>
-          <input type="text" name="to_name" />
+          <input type="text" name="to_name" required="true"/>
           <br />
           <p className="fontContact">Email</p>
-          <input type="email" name="from_name" />
+          <input type="email" name="from_name" required="true"/>
           <br />
           <p className="fontContact">Message</p>
-          <textarea name="message" />
+          <textarea name="message" required="true"/>
           <input type="submit" value="Send" />
         </form>
+        </div>
+        </div>
 </div>
-
+</div>
   );
 };
 

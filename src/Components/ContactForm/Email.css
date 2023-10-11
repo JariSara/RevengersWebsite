@@ -81,22 +81,44 @@ input[type="submit"] {
     grid-column-end: 3;
   }
 
-.test{
-    margin-top: 100px;
-    height: 100px;
-    width: 350px;
-    overflow-wrap: break-word;
-}
-.test div{
-    color: white;
-    margin: 5px;
-    padding: 10px;
-    font-family: dbFont;
-    font-size: 25px;
-}
 
 .flexingEmail{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 2008px) {
+    .emailContainer{
+        margin-top: 100px;
+        height: 100px;
+        width: 350px;
+        overflow-wrap: break-word;
+    }
+    .emailContainer div{
+        color: white;
+        margin: 5px;
+        padding: 10px;
+        font-family: dbFont;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1008px) {
+    .emailContainer{
+        margin-top: 10px;
+        height: 10px;
+        width: 350px;
+        overflow-wrap: break-word;
+    }
+    .emailContainer div{
+        color: white;
+        margin: 5px;
+        padding: 10px;
+        font-family: dbFont;
+        font-size: 18px;
+    }
+    .formCont{
+        height: 10px;
+        width: 250px;
+    }
 }

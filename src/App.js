@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar.tsx";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Container from '@mui/system/Container';
+
 const myStyle = {
   backgroundImage: `url(${process.env.PUBLIC_URL + "/bg.jpg"})`,
   height: 'auto',
@@ -20,22 +20,21 @@ const myStyle = {
 };
 
 function App() {
-  console.log("osd");
+
   return (
     <div>
-        <BrowserRouter>
-          <Navbar />
-          <div style={myStyle}>
+      <BrowserRouter>
+        <Navbar />
+        <div style={myStyle}>
           <Routes>
-            <Route path="Frontpage" element={<FrontPage />} />
+            <Route path="/" element={<FrontPage />} />
             <Route path="Players" element={<Players />} />
             <Route path="History" element={<History />} />
             <Route path="Tournaments" element={<Tournaments />} />
             <Route path="Contact" element={<Contact />} />
           </Routes>
-
-          </div>
-        </BrowserRouter>
+        </div>
+      </BrowserRouter>
 
     </div>
   )

@@ -140,7 +140,36 @@ h1 {
         flex: 3;
         /* Adjust the flex value to control the width of the middle section */
         text-align: center;
-        margin-top: -7rem;
+        margin-top: -1rem;
+    }
+    .fontChanger{
+       font-size: 1.5rem;
+    }
+}
+@media (max-width: 808px) {
+    h1{
+        font-size: 1rem;
+    }
+    .left img,
+    .right img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 8rem;
+        /* Add margin-bottom to create space between images */
+        width: 25rem;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain the aspect ratio */
+    }
+
+    .middle {
+        flex: 3;
+        /* Adjust the flex value to control the width of the middle section */
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .fontChanger{
+       font-size: 1rem;
     }
 }
 
