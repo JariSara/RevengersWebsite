@@ -4,7 +4,9 @@ import FrontPageTextAnimation from "./FrontPageTextAnimation.tsx";
 
 function FrontPage() {
     return (
-        <div><FrontPageTextAnimation></FrontPageTextAnimation></div>
+        <div>
+            <FrontPageTextAnimation></FrontPageTextAnimation>
+        </div>
     )
 }
 export default FrontPage;

@@ -1,0 +1,102 @@
+
+.scoreboard-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff; /* Text color */
+  }
+  
+  .scoreboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .team {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .score {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .increment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .increment-button:hover {
+    background-color: #0056b3;
+  }
+
+  .fontContact {
+    font-family: dbFont;
+    color: white;
+    font-size: 20px;
+}
+
+.teamFont {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.player-info{
+
+}
+
+.grid{
+    display:grid;
+}
+.grid1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+}
+.grid2{
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+@media screen and (max-width: 2066px) {
+  .teamFont {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+}
+
+@media screen and (max-width: 1366px) {
+  .teamFont {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 806px) {
+  .teamFont {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+}
