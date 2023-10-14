@@ -10,12 +10,12 @@
     margin: 50px;
     padding: 10px;
 
-    font-family: dbFont;
+    font-family: boldfont;
     font-size: 25px;
 }
 
 .fontContact {
-    font-family: dbFont;
+    font-family: boldFont;
     color: white;
     font-size: 20px;
 }
@@ -26,7 +26,7 @@
 }
 
 .textAdjuster {
-    font-family: dbFont;
+    font-family: boldFont;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -98,7 +98,27 @@ h1 {
     text-align: center;
     margin-top: -400px;
 }
+@media (max-width: 4008px) {
 
+    .left img,
+    .right img {
+        max-width: 200%;
+        height: auto;
+        margin-bottom: 200px;
+        /* Add margin-bottom to create space between images */
+        width: 250px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain the aspect ratio */
+    }
+
+    .middle {
+        flex: 3;
+        /* Adjust the flex value to control the width of the middle section */
+        text-align: center;
+        margin-top: 100px;
+    }
+}
 @media (max-width: 2008px) {
 
     .left img,

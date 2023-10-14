@@ -6,29 +6,19 @@ import Typography from '@mui/material/Typography';
 import '../../index.css';
 import './Players.css';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import { Box, Button, CardActions, Collapse, Grid, Modal } from '@mui/material';
+import { Box, Button, CardActions, Collapse, Grid, Modal, makeStyles } from '@mui/material';
+import Backdrop from '@mui/material/Backdrop';
 import { styled } from '@mui/material/styles';
 //import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
-const style2 = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  transparent: true,
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
-const myStyle = {
-  backgroundImage: `url(${process.env.PUBLIC_URL + "/val.jpg"})`,
-  height: '100vh',
-  marginTop: '-70px',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
+const myStylePlayers = {
+  backgroundImage: `url(${process.env.PUBLIC_URL + "../bg.jpg"})`,
+  backgroundSize: '100% 100%',
+  backgroundRepeat: 'repeat',
+  backgroundAttachment: "fixed",
+  minHeight:"45vh"
 };
 
 const ExpandMore = styled((props: ExpandMoreProps) => {
@@ -50,6 +40,19 @@ const styles = {
 function changeBackground(e) {
   e.target.style.background = 'red';
 }
+
+const modalStyles = theme => ({
+  modalStyle1:{
+    position:'absolute',
+    top:'10%',
+    left:'10%',
+    overflow:'scroll',
+    height:'100%',
+    display:'block'
+  }
+});
+
+
 const CardInfo = function (playerName, playerInformation, imageName, typeOfPlayer, ageAndCountry) {
   const playerN = playerName;
   const playerI = playerInformation;
@@ -63,8 +66,10 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-
+    <div>
+      <div style={myStylePlayers}>
     <div className="divAdjuster">
+      
       <Button onClick={handleOpen}>
         <Card sx={{
           maxWidth: 500
@@ -100,12 +105,14 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
       <Modal
         open={open}
         onClose={handleClose}
+        className='modalCSS'
+        BackdropComponent={Backdrop}
       >
         <div className="modalAdjuster">
-          <div>
+          <div className="modalCSS">
 
             <Card sx={{
-              maxWidth: 600
+              maxWidth: 1000
             }} style={{ backgroundColor: "transparent" }}>
               <div>
                 <Box className="boxAdjuster2">
@@ -128,7 +135,8 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
           </div>
         </div>
       </Modal>
-    </div>
+      </div>
+      </div></div>
 
   )
 

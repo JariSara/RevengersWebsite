@@ -12,14 +12,14 @@
 }
 
 .newFontt {
-  font-family: dbFont;
+  font-family: boldfont;
   color: white;
   font-size: 20px;
   text-align: center;
 }
 
 .playerDescriptionFont {
-  font-family: dbFont;
+  font-family: boldfont;
   color: white;
   font-size: 15px;
 }
@@ -36,7 +36,7 @@
 }
 
 .BoxedText {
-  font-family: dbFont;
+  font-family: boldfont;
   color: red;
   font-size: 25px;
   text-align: center;
@@ -48,8 +48,39 @@
   border-color: 'transparent';
 
 }
+@media screen and (max-width: 4566px) {
+  .modalCSS{
+    overflow: scroll;
+  }
+  .boxAdjuster {
+    width: 40rem;
+    height: 45rem;
+  }
+  .boxAdjuster2 {
+    width: 60rem;
+    height: 80rem;
+    
+  }
+  .fontCardEnlarged {
+    font-family: boldfont;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  /*.imageStyle{
+    height: 50rem;
+    background-Size: 100%;
+    background-Repeat: repeat;
+    background-Attachment: fixed;
+  }*/
 
+
+}
 @media screen and (max-width: 2066px) {
+  .modalCSS{
+    overflow: scroll;
+    overflow: hidden;
+  }
   .boxAdjuster {
     width: 20rem;
     height: 25rem;
@@ -60,7 +91,7 @@
     
   }
   .fontCardEnlarged {
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -70,6 +101,9 @@
 }
 
 @media screen and (max-width: 1366px) {
+  .modalCSS{
+    overflow: scroll;
+  }
   .boxAdjuster {
     width: 18rem;
     height: 23rem;
@@ -79,7 +113,7 @@
     height: 50rem;
   }
   .fontCardEnlarged {
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -87,16 +121,19 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .modalCSS{
+    overflow: scroll;
+  }
   .boxAdjuster {
     width: 14rem;
     height: 20rem;
   }
   .boxAdjuster2 {
     width: 20rem;
-    height: 50rem;
+    height: 60rem;
   }
   .fontCardEnlarged {
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -104,6 +141,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .modalCSS{
+    overflow: scroll;
+  }
   .boxAdjuster {
     width: 10rem;
     height: 16rem;
@@ -113,7 +153,7 @@
     height: 50rem;
   }
   .fontCardEnlarged {
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
     font-size: 15px;
     text-align: center;
@@ -121,16 +161,19 @@
 }
 
 @media screen and (max-width: 480px) {
+  .modalCSS{
+    overflow: scroll;
+  }
   .boxAdjuster {
-    width: 5rem;
-    height: 10rem;
+    width: 8rem;
+    height: 13rem;
   }
   .boxAdjuster2 {
     width: 14rem;
     height: 50rem;
   }
   .fontCardEnlarged {
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
     font-size: 15px;
     text-align: center;

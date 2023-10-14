@@ -87,6 +87,25 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 4008px) {
+    .emailContainer{
+        margin-top: 200px;
+        height: 300px;
+        width: 650px;
+        overflow-wrap: break-word;
+    }
+    .emailContainer div{
+        color: white;
+        margin: 20px;
+        padding: 30px;
+        font-family: boldFont;
+        font-size: 60px;
+    }
+    .formCont{
+        height: 100px;
+        width: 550px;
+    }
+}
 @media (max-width: 2008px) {
     .emailContainer{
         margin-top: 100px;
@@ -98,7 +117,7 @@ input[type="submit"] {
         color: white;
         margin: 5px;
         padding: 10px;
-        font-family: dbFont;
+        font-family: boldFont;
         font-size: 25px;
     }
 }
@@ -114,11 +133,15 @@ input[type="submit"] {
         color: white;
         margin: 5px;
         padding: 10px;
-        font-family: dbFont;
+        font-family: boldFont;
         font-size: 18px;
     }
     .formCont{
         height: 10px;
         width: 250px;
     }
+}
+
+.newFont{
+    font-family: boldFont;
 }

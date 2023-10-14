@@ -6,22 +6,24 @@ import History from "./Components/GameHistory/History.tsx";
 import Tournaments from "./Components/FutureMatches/Tournaments.tsx";
 import Contact from "./Components/ContactForm/EmailContactForm.jsx";
 import './index.css';
-import React, { Component } from 'react';
+import React, { Component, useEffect} from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar.tsx";
 import { HashRouter, Routes, Route } from "react-router-dom";
-
 const myStyle = {
   backgroundImage: `url(${process.env.PUBLIC_URL + "/bg.jpg"})`,
-  height: 'auto',
-  backgroundSize: '100% 100%',
-  backgroundRepeat: 'repeat',
-  backgroundAttachment: "fixed"
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundAttachment: "fixed",
+  maxHeight: '30000rem',
 };
 
 function App() {
-
+  useEffect(() => {
+    document.title = 'Revengers';
+  }, []);
   return (
+    
     <div>
       <BrowserRouter>
         <Navbar />

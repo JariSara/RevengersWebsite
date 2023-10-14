@@ -49,7 +49,7 @@ function FrontPageTextAnimation() {
         if (currentWordIndex < words1.length) {
             const timer = setTimeout(() => {
                 setCurrentWordIndex((prevIndex) => prevIndex + 1);
-            }, 100); // 2-second delay
+            }, 50); // 2-second delay
             return () => clearTimeout(timer);
         }
         else
@@ -60,7 +60,7 @@ function FrontPageTextAnimation() {
             if (currentWordIndex2 < words2.length) {
                 const timer = setTimeout(() => {
                     setCurrentWordIndex2((prevIndex) => prevIndex + 1);
-                }, 100); // 2-second delay
+                }, 50); // 2-second delay
                 return () => clearTimeout(timer);
             }
             else
@@ -72,7 +72,7 @@ function FrontPageTextAnimation() {
             if (currentWordIndex3 < words3.length) {
                 const timer = setTimeout(() => {
                     setCurrentWordIndex3((prevIndex) => prevIndex + 1);
-                }, 100); // 2-second delay
+                }, 50); // 2-second delay
                 return () => clearTimeout(timer);
             }
             else
@@ -84,7 +84,7 @@ function FrontPageTextAnimation() {
             if (currentWordIndex4 < words4.length) {
                 const timer = setTimeout(() => {
                     setCurrentWordIndex4((prevIndex) => prevIndex + 1);
-                }, 100); // 2-second delay
+                }, 50); // 2-second delay
                 return () => clearTimeout(timer);
             }
             else
@@ -97,7 +97,7 @@ function FrontPageTextAnimation() {
 
                 const timer = setTimeout(() => {
                     setCurrentWordIndex5((prevIndex) => prevIndex + 1);
-                }, 100); // 2-second delay
+                }, 50); // 2-second delay
                 return () => clearTimeout(timer);
             }
             else
@@ -132,7 +132,7 @@ function FrontPageTextAnimation() {
                         <span
                             key={index}
                             className={`fade-in-word ${currentWordIndex >= index ? 'visible' : ''} ${highlightedWords.some(x => x === word) ? 'gradual-red-fade-in' : ''}`}
-                            style={{ animationDelay: `${index * 0.1}s` }}
+                            style={{ animationDelay: `${index * 0.05}s` }}
                         >
                             <div className="fontChanger">
                                 {word}
@@ -146,7 +146,7 @@ function FrontPageTextAnimation() {
                         <span
                             key={index}
                             className={`fade-in-word ${currentWordIndex2 >= index ? 'visible' : ''} ${highlightedWords2.some(x => x === word2) ? 'gradual-red-fade-in' : ''}`}
-                            style={{ animationDelay: `${(currentWordIndex + index) * 0.1}s` }}
+                            style={{ animationDelay: `${(currentWordIndex + index) * 0.05}s` }}
                         >
                             <div className="fontChanger">
                                 {word2}
@@ -160,7 +160,7 @@ function FrontPageTextAnimation() {
                         <span
                             key={index}
                             className={`fade-in-word ${currentWordIndex3 >= index ? 'visible' : ''} ${highlightedWords3.some(x => x === word3) ? 'gradual-red-fade-in' : ''}`}
-                            style={{ animationDelay: `${(currentWordIndex + currentWordIndex2 + index) * 0.1}s` }}
+                            style={{ animationDelay: `${(currentWordIndex + currentWordIndex2 + index) * 0.05}s` }}
                         >
                             <div className="fontChanger">
                                 {word3}
@@ -174,7 +174,7 @@ function FrontPageTextAnimation() {
                         <span
                             key={index}
                             className={`fade-in-word ${currentWordIndex4 >= index ? 'visible' : ''} ${highlightedWords4.some(x => x === word4) ? 'gradual-red-fade-in' : ''}`}
-                            style={{ animationDelay: `${(currentWordIndex + currentWordIndex2 + currentWordIndex3 + index) * 0.1}s` }}
+                            style={{ animationDelay: `${(currentWordIndex + currentWordIndex2 + currentWordIndex3 + index) * 0.05}s` }}
                         >
                             <div className="fontChanger">
                                 {word4}
@@ -188,7 +188,7 @@ function FrontPageTextAnimation() {
                         <span
                             key={index}
                             className={`fade-in-word ${currentWordIndex5 >= index ? 'visible' : ''} ${highlightedWords5.some(x => x === word5) ? 'gradual-red-fade-in' : ''}`}
-                            style={{ animationDelay: `${(currentWordIndex + currentWordIndex2 + currentWordIndex3 + currentWordIndex4 + index) * 0.1}s` }}
+                            style={{ animationDelay: `${(currentWordIndex + currentWordIndex2 + currentWordIndex3 + currentWordIndex4 + index) * 0.05}s` }}
                         >
                             <div className="fontChanger">
                                 {word5}

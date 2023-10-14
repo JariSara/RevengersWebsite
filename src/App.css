@@ -39,23 +39,43 @@
 }
 
 @font-face {
+  font-family: 'boldfont';
+  font-weight: 900;
+  src: local('boldfont'), url(./Fonts/boldfont.ttf) format('truetype');
+}
+@font-face {
   font-family: 'dbFont';
   font-weight: 900;
   src: local('dbFont'), url(./Fonts/dbFont.ttf) format('truetype');
 }
+@media screen and (max-width: 4066px) {
+  p {
+    font-size: 45px;
+    font-family: boldfont;
+    color: rgb(243, 15, 15);
+  }
 
+  span {
+
+    font-size: 45px;
+    font-family: boldfont;
+    color: rgb(#38E4BD);
+
+  }
+
+}
 @media screen and (max-width: 2066px) {
   p {
     font-size: 30px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: rgb(243, 15, 15);
   }
 
   span {
 
     font-size: 30px;
-    font-family: dbFont;
-    color: rgb(97, 50, 207);
+    font-family: boldfont;
+    color: rgb(#38E4BD);
 
   }
 
@@ -65,15 +85,15 @@
 @media screen and (max-width: 1366px) {
   p {
     font-size: 30px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: rgb(243, 15, 15);
   }
 
   body span {
 
     font-size: 25px;
-    font-family: dbFont;
-    color: rgb(97, 50, 207);
+    font-family: boldfont;
+    color: rgb(#38E4BD);
 
   }
 
@@ -93,13 +113,13 @@
 @media screen and (max-width: 2024px) {
   p {
     font-size: 20px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
   }
 
   body span {
     font-size: 20px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: #38E4BD;
   }
   .testImage2 {
@@ -117,13 +137,13 @@
 @media screen and (max-width: 1424px) {
   p {
     font-size: 20px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
   }
 
   body span {
     font-size: 20px;
-    font-family: dbFont;
+    font-family: boldfont;
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -140,13 +160,13 @@
 @media screen and (max-width: 1024px) {
   p {
     font-size: 20px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
   }
 
   body span {
     font-size: 20px;
-    font-family: dbFont;
+    font-family: boldfont;
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -163,12 +183,12 @@
 @media screen and (max-width: 768px) {
   p {
     font-size: 15px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
   }
   body span {
     font-size: 17px;
-    font-family: dbFont;
+    font-family: boldfont;
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
@@ -185,12 +205,12 @@
 @media screen and (max-width: 480px) {
   p {
     font-size: 10px;
-    font-family: dbFont;
+    font-family: boldfont;
     color: white;
   }
   body span {
     font-size: 13px;
-    font-family: dbFont;
+    font-family: boldfont;
   }
   .testImage2 {
     background-image: url(./Revengers_Logo.png);
