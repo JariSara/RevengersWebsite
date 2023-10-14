@@ -34,13 +34,13 @@
 }
 
 h1 {
-    color: red;
+    color: #38E4BD;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Add a black outline */
     font-family: dbFont;
 }
 
 .colorBox {
-    color: red;
+    color: #38E4BD;
 }
 
 
@@ -218,7 +218,7 @@ h1 {
     }
     100% {
       color: white; /* Gradually transition to red at the end of the animation */
-      background-color: red;
+      background-color: #38E4BD;
 
     }
   }
