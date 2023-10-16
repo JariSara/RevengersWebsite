@@ -18,7 +18,7 @@ const myStylePlayers = {
   backgroundSize: '100% 100%',
   backgroundRepeat: 'repeat',
   backgroundAttachment: "fixed",
-  minHeight:"45vh"
+  minHeight: "45vh"
 };
 
 const ExpandMore = styled((props: ExpandMoreProps) => {
@@ -42,13 +42,13 @@ function changeBackground(e) {
 }
 
 const modalStyles = theme => ({
-  modalStyle1:{
-    position:'absolute',
-    top:'10%',
-    left:'10%',
-    overflow:'scroll',
-    height:'100%',
-    display:'block'
+  modalStyle1: {
+    position: 'absolute',
+    top: '10%',
+    left: '10%',
+    overflow: 'scroll',
+    height: '100%',
+    display: 'block'
   }
 });
 
@@ -66,21 +66,17 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <div>
-      <div style={myStylePlayers}>
     <div className="divAdjuster">
-      
       <Button onClick={handleOpen}>
         <Card sx={{
           maxWidth: 500
-        }} style={{ backgroundColor: "transparent" }}>
+        }} style={{ backgroundColor: "rgb(24,24,24)" }}>
           <div onMouseEnter={e => {
             setMouseOver(true);
           }}
             onMouseLeave={e => {
               setMouseOver(false)
             }}>
-
             <div >
               <Box className="boxAdjuster">
                 <div>
@@ -93,11 +89,9 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
                   {mouseOver ? (<><p className="BoxedText">{typeOfPlayer}</p><p className="newFontt">{ageAndCountry}</p> </>) : (<p></p>)}
                   <p className="BoxedText" style={style}>{typeOfPlayer}</p>
                   <p className="newFontt" style={style}>{ageAndCountry}</p>
-
                 </div>
               </Box>
             </div>
-
           </div>
         </Card>
 
@@ -110,10 +104,9 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
       >
         <div className="modalAdjuster">
           <div className="modalCSS">
-
             <Card sx={{
               maxWidth: 1000
-            }} style={{ backgroundColor: "transparent" }}>
+            }} style={{ backgroundColor: "rgb(24,24,24)" }}>
               <div>
                 <Box className="boxAdjuster2">
                   <div>
@@ -135,11 +128,8 @@ const CardInfo = function (playerName, playerInformation, imageName, typeOfPlaye
           </div>
         </div>
       </Modal>
-      </div>
-      </div></div>
-
+    </div>
   )
-
 }
 
 function Players() {
