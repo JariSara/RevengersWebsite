@@ -93,9 +93,10 @@ const Navbar = () => {
                       <div className="bar3"></div>
                     </div>
                   </Button>
-                </div>
-                <Menu {...bindMenu(popupState)}>
-                  <div className='mobileBackground'>
+                </div>                  
+
+                <Menu {...bindMenu(popupState)} PaperProps={{ style: { backgroundColor: 'black' } }}>
+
                     <MenuItem onClick={popupState.close}>
                       <NavLink to="/">
                         <span>Home</span>
@@ -121,7 +122,7 @@ const Navbar = () => {
                         <span>Contact</span>
                       </NavLink>
                     </MenuItem>
-                  </div> </Menu>
+                  </Menu>
 
               </React.Fragment>
             )}

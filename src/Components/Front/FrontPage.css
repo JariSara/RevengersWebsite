@@ -131,6 +131,7 @@ h1 {
         /* Adjust the width as needed */
         height: auto;
         /* Maintain the aspect ratio */
+        background-attachment: fixed;
     }
 
     .middle {
@@ -154,6 +155,7 @@ h1 {
         /* Adjust the width as needed */
         height: auto;
         /* Maintain the aspect ratio */
+        background-attachment: fixed;
     }
 
     .middle {
@@ -179,6 +181,7 @@ h1 {
         width: 25rem;
         /* Adjust the width as needed */
         height: auto;
+        
         /* Maintain the aspect ratio */
     }
 
@@ -221,4 +224,8 @@ h1 {
       background-color: #38E4BD;
 
     }
+  }
+
+  .fixedImagePos{
+    background-attachment: fixed;
   }

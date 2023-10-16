@@ -121,7 +121,9 @@ function FrontPageTextAnimation() {
         <div className="container">
             <div className="left">
                 {leftImages.map((image, index) => (
+
                     <img key={index} src={image} alt={`Left Image ${index}`} />
+
                 ))}
             </div>
 
