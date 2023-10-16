@@ -45,12 +45,12 @@
 
 .boxAdjuster {
   border: 50;
-  border-color: 'transparent';
 
 }
 @media screen and (max-width: 4566px) {
   .modalCSS{
     overflow: scroll;
+    overflow: hidden;
   }
   .boxAdjuster {
     width: 40rem;
@@ -103,6 +103,7 @@
 @media screen and (max-width: 1366px) {
   .modalCSS{
     overflow: scroll;
+    overflow: hidden;
   }
   .boxAdjuster {
     width: 18rem;
@@ -123,6 +124,7 @@
 @media screen and (max-width: 1024px) {
   .modalCSS{
     overflow: scroll;
+    overflow: hidden;
   }
   .boxAdjuster {
     width: 14rem;
@@ -143,6 +145,7 @@
 @media screen and (max-width: 768px) {
   .modalCSS{
     overflow: scroll;
+    overflow: hidden;
   }
   .boxAdjuster {
     width: 10rem;
@@ -163,6 +166,7 @@
 @media screen and (max-width: 480px) {
   .modalCSS{
     overflow: scroll;
+    overflow: hidden;
   }
   .boxAdjuster {
     width: 8rem;
