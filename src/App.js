@@ -5,6 +5,7 @@ import Players from "./Components/PlayerInfo/Players.tsx";
 import History from "./Components/GameHistory/History.tsx";
 import Tournaments from "./Components/FutureMatches/Tournaments.tsx";
 import Contact from "./Components/ContactForm/EmailContactForm.jsx";
+import Footer from "./Components/FooterCompo/Footer.tsx";
 import './index.css';
 import React, { Component, useEffect} from 'react';
 import { BrowserRouter } from 'react-router-dom';
@@ -36,6 +37,7 @@ function App() {
             <Route path="Contact" element={<Contact />} />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
 
     </div>

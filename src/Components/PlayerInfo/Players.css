@@ -124,7 +124,6 @@
 @media screen and (max-width: 1024px) {
   .modalCSS{
     overflow: scroll;
-    overflow: hidden;
   }
   .boxAdjuster {
     width: 14rem;
@@ -145,7 +144,6 @@
 @media screen and (max-width: 768px) {
   .modalCSS{
     overflow: scroll;
-    overflow: hidden;
   }
   .boxAdjuster {
     width: 10rem;
@@ -166,7 +164,6 @@
 @media screen and (max-width: 480px) {
   .modalCSS{
     overflow: scroll;
-    overflow: hidden;
   }
   .boxAdjuster {
     width: 8rem;

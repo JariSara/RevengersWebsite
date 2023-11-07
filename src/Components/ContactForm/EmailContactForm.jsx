@@ -26,9 +26,9 @@ const EmailContactForm = () => {
   };
 
   return (
-
-<div className="flexingEmail">
 <div style={myStyle}>
+<div className="flexingEmail">
+
     <div className="emailContainer">
       <div> If you wish to come in contact with our management,
         please use this form to contact our staff. The same goes for business inquiries!</div>
