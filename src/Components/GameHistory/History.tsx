@@ -3,6 +3,7 @@ import '../../index.css';
 import './History.css'; // Import the CSS file for styling
 // @ts-ignore
 import listOfMatches from './MatchData.ts'; // Import the CSS file for styling
+import ViewVideo from '../YoutubeComponent/ViewVideo.tsx';
 const myStyles = {
   backgroundImage: `url(${process.env.PUBLIC_URL + "../bg.jpg"})`,
   height: '100vh',
@@ -79,6 +80,14 @@ function History() {
                     </div>
                   </p>
                 </div>
+                {item.videoURL ? (
+                  <div>
+                    <h1>Summary of match: </h1>
+                    <ViewVideo embedId="5bZGxo1CGyE" />
+                  </div>
+                ) : (
+                  <p></p>
+                )}
               </div>
             )}
           </div>
