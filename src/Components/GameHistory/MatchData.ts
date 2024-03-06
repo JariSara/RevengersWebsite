@@ -16,7 +16,8 @@ interface matchHis {
   team2: string,
   organizer: string,
   results: { teamHome: number, teamAway: number },
-  PlayerData: Team[]
+  PlayerData: Team[],
+  videoURL?: string
 }
 const teams: Team[] = [
   {
@@ -661,10 +662,11 @@ const teams8: Team[] = [
 
 const m1: matchHis = {
   team1: "Revengers",
-  team2: "Comodo",
+  team2: "Frog frags",
   organizer: "Norwegian Valorant League",
   results: { teamHome: 2, teamAway: 1 },
-  PlayerData: teams2
+  PlayerData: teams2,
+  videoURL: "5bZGxo1CGyE"
 }
 const m2: matchHis = {
   team1: "Revengers",
