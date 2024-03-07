@@ -57,6 +57,7 @@ function History() {
 
               </div>
             </div>
+            <img src="../expand.svg" height="50" />
             {expandedItem === index && (
               <div className="expanded-details">
                 <div className="team">
